@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Log in</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/signin.css" rel="stylesheet">
+		<link href="css/signup.css" rel="stylesheet">
+		<link href="css/forgot.css" rel="stylesheet">
+
+		<link href="fonts/stylesheet.css" type="text/css" rel="stylesheet"  />
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/docs.css" rel="stylesheet" >
+		<link href="css/bootstrap-social.css" rel="stylesheet" >
+
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href="css/jquery.mobile-1.4.3.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.3.js"></script>
+	    <script type="text/javascript" src="cordova.js"></script>
+
+
+
+	</head>
+
+	<body>
+
+		<div data-role="page" id="inicio">
+
+			<div class="page-header">
+				<h1>SCANSHOPY</h1>
+			</div>
+
+			<div class="container">
+
+				<form class="form-signin" role="form" id="formulario">
+					</br>
+					</br>
+
+					<input type="username" class="form-control" placeholder="Username" id="nombredeusuario" name="nombredeusuario" >
+					<input type="contrasena" class="form-control" placeholder="Password"  id="clave" name="clave">
+
+					<button class="btn btn-lg btn-primary btn-block" type="submit" value="Login" id="botonLogin">
+						Log in
+					</button>
+
+				</form>
+
+				<div class="redes-sociales">
+
+					<p>
+						You can also log in with:
+					</p>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-xs-6" style="padding-right: 5px;">
+
+						<a class="btn btn-block btn-social btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);"> <img src="img/facebook.png"> Facebook </a>
+
+					</div>
+
+					<div class="col-xs-6" style="padding-left: 5px;">
+
+						<a class="btn btn-block btn-social btn-twitter" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-twitter']);"><img src="img/twitter.png" style="width: 25px; margin-top: 4px; margin-left: 2px;"> Twitter </a>
+
+					</div>
+
+				</div>
+				<div class="signup">
+
+					<p>
+						Don`t have an account yet?
+					</p>
+
+				</div>
+
+				<a href="#signup"><button class="boton" type="submit">
+					 Sign up
+				</button></a>
+
+			</div>
+
+			<div class="forgot">
+
+					<a href="#forgot"><i class="fa fa-key"></i> Do you forgot your password?</a>
+
+			</div>
+
+		</div>
+
+		<!-- **********************  Página Sign Up **********************  -->
+
+		<div data-role="page" id="signup">
+			<div class="page-header">
+				<h1>SCANSHOPY</h1>
+			</div>
+
+			<div class="container">
+
+
+					<form class="form-signup" role="form">
+						</br>
+						</br>
+
+						<input type="username" class="form-control" placeholder="Username" required >
+						<input type="contrasena" class="form-control" placeholder="Password" required>
+						<input type="mail" class="form-control" placeholder="E-mail" required>
+
+					</form>
+
+					<div class="col-xs-6" style="padding-right: 5px;">
+
+						<a href="#inicio"><button class="boton" type="submit">
+							Cancel
+						</button></a>
+
+					</div >
+
+					<div class="col-xs-6" style="padding-left: 5px;">
+
+						<a href="#inicio"><button class="boton" type="submit">
+							Sign up
+						</button></a>
+
+					</div >
+
+				</div>
+		</div>
+
+		<!-- **********************  Página Forgot your Password **********************  -->
+
+		<div data-role="page" id="forgot">
+				<div class="page-header">
+
+					<h1>SCANSHOPY</h1>
+				</div>
+				<div class="container">
+
+					<form class="form-forgot" role="form">
+						<div class="forgot-pass">
+
+							<h2>Enter E-mail</h2>
+							<p>
+								Please enter the email address for your account
+							</p>
+						</div >
+
+						<input type="mail" class="form-control" placeholder="E-mail" required>
+
+					</form>
+
+					<div class="col-xs-6" style="padding-right: 5px;">
+
+						<a href="#inicio"><button class="boton" type="submit" style="text-align:center;">
+							Cancel
+						</button></a>
+
+					</div >
+
+					<div class="col-xs-6" style="padding-left: 5px;">
+
+						<a href="#inicio"><button class="boton " type="submit">
+							Ok
+						</button></a>
+
+					</div >
+
+				</div>
+		</div>
+
+		<!-- **********************  Página Select Your Interest **********************  -->
+
+		<div data-role="page" id="interest">
+			<div class="page-header">
+				<h1>SCANSHOPY</h1>
+			</div>
+
+			<div class="container">
+
+				<div class="top">
+
+					<h2>Select your interest</h2>
+
+					<div class="row">
+
+						<div class="col-md-4" style="padding-bottom:20px">
+
+							<a class="btn btn-block btn-social btn-flickr" onclick="callAnothePage()"> <img src="img/female.png"> FEMALE </a>
+
+						</div>
+
+						<div class="col-md-4" style="padding-bottom:20px">
+
+							<a class="btn btn-block btn-social btn-github" onclick="callAnothePage()"> <img src="img/male.png"> MALE </a>
+
+						</div>
+
+						<div class="col-md-4" style="padding-bottom:20px">
+
+							<a class="btn btn-block btn-social btn-dropbox" onclick="callAnothePage()"> <img src="img/both.png"> BOTH </a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<script type="text/javascript" charset="utf-8">
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, true);
+			}
+
+			function onDeviceReady() {
+				// navigator.notification.alert("PhoneGap is working");
+			}
+
+			function callAnothePage() {
+				window.location = "select.html";
+			}
+
+		</script>
+		<script>
+			$('#formulario').submit(function() {
+
+				// recolecta los valores que inserto el usuario
+				var datosUsuario = $("#nombredeusuario").val()
+				var datosPassword = $("#clave").val()
+
+				archivoValidacion = "http://netfordigital.com/login/validacion.php?jsoncallback=?"
+
+				$.getJSON(archivoValidacion, {
+					usuario : datosUsuario,
+					password : datosPassword
+				}).done(function(respuestaServer) {
+
+					if (respuestaServer.validacion == "ok") {
+
+						/// si la validacion es correcta, muestra la pantalla "home"
+						$.mobile.changePage("#interest", {
+							type : "post",
+							data : $("form#search").serialize(),
+							changeHash : false
+						});
+
+					} else {
+						alert(respuestaServer.mensaje)
+
+						/// ejecutar una conducta cuando la validacion falla
+					}
+
+				})
+				return false;
+			})
+			
+			
+			app.initialize();
+
+		</script>
+		
+		
+	</body>
+</html>

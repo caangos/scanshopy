@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SCANSHOPY</title>
+    
+    <!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/scanshopy.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.custom_radio_checkbox.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+    $(document).ready(function(){
+        $(".radio").dgStyle();
+        $(".checkbox").dgStyle();
+    });
+    </script>
+</head>
+
+<body>
+<div class="bar_space"></div>
+<div class="header">
+	<a href="#" onclick="callAnothePage()"class="back"><img src="img/006.png" width="10"></a>
+	<img src="img/001.png" width="121" height="18" id="logo_index" class="left" />
+</div>
+
+<div class="content_wrapper">
+    <img src="img/003.png" width="165" />
+  <div class="form">
+        <input type="text" placeholder="Nombre" class="input_dato">
+        <input type="text" placeholder="E-mail" class="input_dato">
+        <input type="text" placeholder="New Password" class="input_dato">
+        <input type="text" placeholder="Country" class="input_dato">
+        <input type="text" placeholder="State" class="input_dato">
+        <input type="text" placeholder="Postal Code" class="input_dato">
+    </div>
+    
+    <h4>Select your interest</h4>
+    
+  <div class="cinta_radios">
+    <div class="content_radio">
+            <div class="radio left">
+                <input type="radio" id="single" name="marital_status" checked value="single"> 
+            </div>
+            <div class="left label_radio">Men</div>
+    	</div>
+
+    <div class="content_radio">
+            <div class="radio left">
+                <input type="radio" id="single" name="marital_status" checked value="single"> 
+            </div>
+            <div class="left label_radio">Women</div>
+    	</div>
+
+    <div class="content_radio" style="margin-right:0px">
+            <div class="radio left">
+                <input type="radio" id="single" name="marital_status" checked value="single"> 
+            </div>
+            <div class="left label_radio">Both</div>    	
+   		</div>
+        <div class="clear"></div>
+  </div>
+</div>
+
+    
+<div class="links_box">
+      <div class="int">
+    	<a href="#">Terms & Conditions</a>
+    	<a href="#" class="link_middle">Privacy Policy</a>
+    	<a href="#">Contact Us</a>
+      </div>
+    </div>
+
+	<center>
+	<a href="#" onclick="callAnothePage()"><img src="img/005.png" height="40" /></a>
+	</center>
+	
+          <script type="text/javascript" charset="utf-8">
+
+             function onLoad()
+             {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+             }
+
+             function onDeviceReady()
+             {
+                  // navigator.notification.alert("PhoneGap is working");
+             }
+
+             function callAnothePage()
+             {
+                window.location = "products-brands.html";
+             }
+
+          </script>	  	
+</body>
+</html>
